@@ -91,3 +91,15 @@ Send a real-time alert email to security authorities
 Confirm delivery inside the dashboard
 
 SMTP is configured using app-based authentication for security.
+
+## How to Run the Project
+1. Install required libraries:
+pip install streamlit pandas numpy matplotlib smtp 
+2. Configure email credentials
+Inside the script:
+EMAIL_SENDER = "your_email@gmail.com"
+EMAIL_PASSWORD = "your_app_password"
+EMAIL_RECEIVER = "security_authority@email.com"
+3. Run the Streamlit application:
+streamlit run project.py
+
